@@ -25,22 +25,22 @@
 
     <script>
         /* 
-                                                                                                SOAL NO. 1 Balik Kalimat 
-                                                                                                Tipe data String dapat dilihat sebagai tipe data array. Kita dapat mengakses karakter-karakter pada sebuah string seperti mengakses elemen pada array.
-                                                                                                Buatlah sebuah fungsi dengan nama balikString(). Fungsi ini akan menerima argumen sebuah string dan mengembalikan kebalikannya.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-                                                                                                Catatan: TIDAK Boleh menggunakan reverse, wajib dengan looping!
+                SOAL NO. 1 Balik Kalimat 
+                Tipe data String dapat dilihat sebagai tipe data array. Kita dapat mengakses karakter-karakter pada sebuah string seperti mengakses elemen pada array.
+                Buatlah sebuah fungsi dengan nama balikString(). Fungsi ini akan menerima argumen sebuah string dan mengembalikan kebalikannya.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                Catatan: TIDAK Boleh menggunakan reverse, wajib dengan looping!
 
-                                                                                                Contoh: 
-                                                                                                balikString("abduh coding") 
-                                                                                                akan memberikan output: "gnidoc hudba"
+                Contoh: 
+                balikString("abduh coding") 
+                akan memberikan output: "gnidoc hudba"
 
-                                                                                                Hint: Gunakan properti length dari string untuk mencari tahu panjang string
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        */
+                Hint: Gunakan properti length dari string untuk mencari tahu panjang string
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        */
         // Code Kamu di sini
         function balikString(word) {
             var reverseWord = "";
-            for (var i = word.length; i >= 0; i--) {
+            for (var i = word.length - 1; i >= 0; i--) {
                 reverseWord += word[i];
             }
             return reverseWord;
